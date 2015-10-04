@@ -45,3 +45,46 @@ Off the top of my head:
 -help --> help?
 
 #1.4 Forking and Cloning#
+Instructions to create new repo:
+
+1 - Login to your Github profile
+
+2 - Open the drop-down menu from the "+" icon in the top-right-corner
+
+3 - Select "New Repository"
+
+4 - Name the repository and complete additional information as needed
+
+5 - Select "Create Repository"
+
+
+
+Instructions to fork a repo:
+
+1 - Open the repo
+
+2 - Click the "Fork" button in the top-right corner
+
+3 - Pop-up prompt will ask where you would like to fork from. Select your profile name.
+
+
+
+Instructions to clone a repo:
+
+1 - Open rep that you'd like to clone in Github
+
+2 - Copy the "HTTPS Clone URL" from the righthand side
+
+3 - Open program to access command line (i.e. terminal)
+
+4 - Type in the following command "git clone" followed by the pasted URL.
+
+Command example: "git clone [PASTED URL HERE]"
+
+
+
+Creating a new repository generates an empty workspace, while forking a repository creates a copy of the given code, allowing someone to make changes without affecting the master copy. The forked copy will be sent directly to your account. You would fork to make additions, edits or build upon a repo.
+
+
+
+While setting up git and Github, I forgot a couple of the commands to be used in terminal. Through this, I was able to practice adding and removing directories. I also learned that directories cannot be removed using the "rm" command, but rather the "rm -rf" command.
