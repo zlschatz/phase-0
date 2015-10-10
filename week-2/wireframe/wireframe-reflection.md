@@ -1,3 +1,4 @@
-![Wireframe Index](/img/wireframe-index.jpg)
+![Wireframe Index](img/wireframe-index.jpg)
 
-![Wireframe Blog Index](/img/wireframe-blog-index.jpg "Wireframe Blog Index")
+![Wireframe Blog Index](img/wireframe-blog-index.jpg)
+
