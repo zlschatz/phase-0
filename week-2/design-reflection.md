@@ -1,3 +1,4 @@
+
 ![Site Map Image](phase-0/week-2/imgs/site-map.png)
 
 <h3>What are the 6 Phases of Web Design?</h3>
