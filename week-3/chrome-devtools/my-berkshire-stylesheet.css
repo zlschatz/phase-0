@@ -1,0 +1,26 @@
+html {
+  background-color: white;
+  color: navy;
+}
+
+a:link{
+  color: purple;
+}
+
+a:visited{
+  color: red;
+}
+
+header{
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  white-space: wrap;
+  line-height: 0;
+}
+
+h4::first-letter{
+  font-size: 200%;
+}
+
