@@ -60,3 +60,27 @@ footer {
 #copyright {
   font-size: .5em;
 }
+
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+We ran into a few problems while initially linking the stylesheet to the HTML file. One important aspect to keep in mind is that you are opening your HTML file through the same branch that is currently being edited. It took us a while to see that the CSS changes were being put into affect because we were opening the CSS file from our master local copy, and not the new branch we were working on. Another important aspect is to be sure that the <link> tag is correctly positioned within the <head>. Finally, double checking small errors such as spelling will go a long way.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+It was difficult to manipulate the site positioning, and required a good amount of research. There were times that we became frustrated with components that seemed to be fairly basic formatting. It's still not perfect, but I believe it was a good effort for our first time working in CSS. One trick we used was to think ahead and understand what positioning properties could be applied to multiple sections of the page. By understanding the sections captured within a single nest, we were able to limit redundancies while styling. Another cool trick was CSS syntax such as a:linked, a:visited and ::first-letter. These proved to be extremely useful.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+
+While completing the challenge, we changed element styles through text size, color, link attributes, border lines, and background-color.
+
+Did you modify the HTML to include classes or ids? If so, which did you chose and why? If you didn't, how would you know which one to add to your HTML?
+
+Yes, the HTML file was slightly modified to include a few ids for editing purposes. One example of this was the inclusions of ids for the list columns. This was used to split the original list into two separate lists and give each different positioning attributes. Another example was the HTML code included to create lines across the page. Finally, a few breaks were included in the HTML that probably should have been inserted during week-2's original assignment.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+I believe that the actual code was cleaner, as the HTML code seems to be written around the design. Comparitively, we were told to write the HTML code and then go back and edit with CSS. There are many examples of times when the actual code uses additional breaks and ids to maintain font size that would have been useful to include. The actual code is very clean and easy to follow. That being said, I believe the actual code included tags such as <hr> that we were instructed not to use.
+
+*/
+
