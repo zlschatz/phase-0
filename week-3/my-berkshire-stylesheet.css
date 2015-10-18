@@ -1,4 +1,5 @@
 html {
+<<<<<<< HEAD
   background-color: white;
   color: navy;
 }
@@ -84,3 +85,7 @@ I believe that the actual code was cleaner, as the HTML code seems to be written
 
 */
 
+=======
+  background-color: red;
+}
+>>>>>>> 236f1ae21e66ebfe40c80ebc934e5e7c45e2aa66
