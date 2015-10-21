@@ -1,3 +1,7 @@
+<a href="https://github.com/zlschatz/phase-0/blob/master/week-4/defining-variables.rb">Challenge 4.2.1 Defining Variables</a>
+<a href="https://github.com/zlschatz/phase-0/blob/master/week-4/simple-string.rb">Challenge 4.2.2 Simple Strings</a>
+<a href="https://github.com/zlschatz/phase-0/blob/master/week-4/basic-math.rb">Challenge 4.2.3 Basic Math</a>
+
 <h3>Release 0</h3>
 
 What does puts do?
@@ -31,3 +35,36 @@ irb(main):003:0> 525600 * 10
 => 5256000
 irb(main):004:0>
 ```
+
+
+<h3>Reflection</h3>
+
+How does Ruby handle addition, subtraction, multiplication, and division of numbers?
+
+Ruby follows as set of instructions to execute basic math problems such as addition, subtraction, multiplication and division. These functions are defined by various symbols: + - * / . Each acts in the way we would expect, with the exception of division pertaining to integers.
+
+What is the difference between integers and floats?
+
+As mentioned in detail above, integers are non-decimal point numbers and floats are numbers with decimal points. The decimal point can define a number as an integer or a float. You can also define a variable as a float by attaching ".to_f" at the end of the variable.
+
+What is the difference between integer and float division?
+
+As an overview of the difference, please refer to the following three examples:
+
+  9.0 / 2 = 4.5 (float division)
+  9 / 2.0 = 4.5 (float division)
+  9 / 2 = 4 (integer division)
+
+Division with integers round down to the whole number while floats display the decimal point value.
+
+What are strings? Why and when would you use them?
+
+Strings are objects that typically respent characters to display letters and words. We use these as values for variables. For example, I defined the "my_name" variable as "Zach" -- whenever "my_name" is called, "Zach" will appear in its place.
+
+What are local variables? Why and when would you use them?
+
+Local variables are variables defined in the unique ruby files created. During this challenge, we defined local variables such as name, age, sum1 and sum2. We use them to retain values that will be used throughout the page. These can also be unique to a user - for example, sites prompt users to create profiles to store local variables and send greetings by name.
+
+How was this challenge? Did you get a good review of some of the basics?
+
+This was a great review of the basics. I felt comfortable navigating through the challenge, and remember some of the material from my preparation for the DBC interview. I enjoy writing in ruby -- I feel as though the language makes sense.
