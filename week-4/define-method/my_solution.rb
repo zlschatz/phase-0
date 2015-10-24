@@ -5,10 +5,7 @@
 
 # Your Solution Below
 
-name = Zach
-age = 23
-hometown = South Orange
-
-def do_somthing(name, age, hometown)
+def do_something(x, y, z)
 
 end
+
