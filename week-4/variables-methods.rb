@@ -7,6 +7,10 @@ last_name = gets.chomp
 
 puts "Hello, " + first_name + " " + middle_name + " " + last_name + "!"
 
+<p><a href="https://github.com/zlschatz/phase-0/tree/master/week-4/address">Return a Formatted Address</a></p>
+
+<p><a href="https://github.com/zlschatz/phase-0/tree/master/week-4/math">Defining Math Methods</a></p>
+
 #How do you define a local variable?
   #Local variables are defined within a method. They begin with a lowercase letter or _. These are the variables that will pass through the method. For example:
     #def method (variable_1, variable_2)
