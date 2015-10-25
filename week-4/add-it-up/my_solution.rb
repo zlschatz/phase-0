@@ -4,21 +4,22 @@
 # include it in this file. Also make sure everything that isn't code
 # is commented in the file.
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself, with: Jamar].
 
 # 0. total Pseudocode
 # make sure all pseudocode is commented out!
 
-# Input:
-# Output:
+# Input: Numbers in Array
+# Output: Sum of Numbers
 # Steps to solve the problem.
-
+# define method
+# create return of array integers
+# solve for sum of array integers
 
 # 1. total initial solution
-def total(x)
-  total.each {|a,b| a + b}
+def total(array)
+  array.inject{|sum,x| sum + x }
 end
-
 
 # 3. total refactored solution
 
