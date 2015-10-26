@@ -18,7 +18,7 @@
 
 # 1. total initial solution
 def total(array)
-  array.inject{|sum,x| sum + x }
+  array.each {|x| sum += x}
 end
 
 # 3. total refactored solution
