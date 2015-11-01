@@ -18,9 +18,23 @@
   # activate condition to include commas every 3 digital from the left
 
 # 1. Initial Solution
-def separate_comma (number)
-  if number < 4
-    p number.to_s
+
+def separate_comma(number)
+  if number.to_s.length < 4
+    return number.to_s
+  else
+    new_number = []
+    i = 1
+    number.to_s.reverse.split('').each do |x|
+      new_number.push(x)
+      if i % 3 == 0
+        new_number.push(",")
+      end
+      i = i + 1
+    end
+    return new_number.reverse.join
+  end
+end
 
 
 
