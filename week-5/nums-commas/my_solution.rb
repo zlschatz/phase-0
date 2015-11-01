@@ -19,6 +19,7 @@
 
 # 1. Initial Solution
 
+=begin
 def separate_comma(number)
   if number.to_s.length < 4
     return number.to_s
@@ -35,13 +36,27 @@ def separate_comma(number)
     return new_number.reverse.join
   end
 end
-
+=end
 
 
 
 # 2. Refactored Solution
 
-
+def separate_comma(number)
+  number = number.to_s
+  if number.length < 4
+    return number
+  else
+    new_number = []
+    number.reverse.split('').each_with_index do |x, i|
+      new_number.push(x)
+      if (i + 1) % 3 == 0
+        new_number.push(",")
+      end
+    end
+    return new_number.reverse.join
+  end
+end
 
 
 # 3. Reflection
