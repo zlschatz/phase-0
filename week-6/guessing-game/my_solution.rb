@@ -102,3 +102,28 @@ class GuessingGame
 end
 
 #Reflection
+
+=begin
+
+How do instance variables and methods represent the characteristics and behaviors (actions) of a real-world object?
+
+Instance variables and methods represent real-world objects through state and behavior attributes. These pieces of code are given names and distinguished attributes along with several functions. They build upon one another. Instance variables are used throughout multiple methods as well.
+
+
+When should you use instance variables? What do they do for you?
+
+Instance variables are used within classes. These variables are defined within the methods of a given class to be used across multiple methods. Rather than defining a local variable in the class's methods, it is best to define instance variables. In the challenge, I used instance variables to carry values from previous methods into the following methods.
+
+
+Explain how to use flow control. Did you have any trouble using it in this challenge? If so, what did you struggle with?
+
+Flow control is used to set conditions that return particular values, or trigger executions. In this challenge, I used a series of if/elsif/else statements to set conditions. This returned values of :high :low and :correct. I did not find it difficult to implement flow control in this challenge, but did spend additional time refactoring the statements. I took this as an opportunity to explore shortcuts in writing flow control. It may be a bit less readable, but I wanted to try it out.
+
+
+Why do you think this code requires you to return symbols? What are the benefits of using symbols?
+
+It's best to return as symbols because they are instances of built-in Ruby class. These are unique returns for each condition. Symbols can also be used as hashes in a key -- so if we wanted to organize the guesses, we'd be able to do so. One of the major benefits - as pointed out in The Well-Grounded Rubyist - is the look of symbols. They're easy to read and identify within code. In this challenge, the symbols are easy to find. While reading this code, developers would quickly determine that the return would be one of the three symbols.
+
+
+
+=end
