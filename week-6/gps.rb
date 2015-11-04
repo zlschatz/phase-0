@@ -75,8 +75,20 @@ p serving_size_calc("cookie", 10)
 
 =begin
 What did you learn about making code readable by working on this challenge?
+
+The first step in making code readable is fully understanding what the current code is executing. Testing different break points within the code is a good way to see how the execution develops. Rather than attacking it in groups, move line by line to analyze the potential outcomes. Only once the code is comprehensive, will the refactoring be able to take place. Testing changes often is also vital to avoid confusion and code breaks.
+
 Did you learn any new methods? What did you learn about them?
+
+At one point, we looked up the .value_to method as neither of us were too familiar with it. We learned that .value_to would arrange values in an array. This was not our intent through the execution, and we ultimately eliminated the method from our code.
+
 What did you learn about accessing data in hashes?
+
+Accessing data in a hash is called in the same way that we access data in an array. The difference is that we call for the data by the key for a hash, and by the index for an array.
+
 What concepts were solidified when working through this challenge?
+
+One concept that was solidified was the return of an ArgumentError. We ran into some difficulties while refactoring the code, and realized that it had to be placed between our definitions of variables. The command 'raise' will act as a return for the ArgumentError. Accessing hash data was emphasized through this challenge as well. I believe I need a bit more work on this, but made great steps during the challenge.
+
 
 =end
