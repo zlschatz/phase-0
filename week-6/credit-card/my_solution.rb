@@ -106,6 +106,8 @@ class CreditCard
   end
 
   def check_card
+    self.double_every_other
+    self.sum_of_digits
     if @sum % 10
       p true
     else
@@ -158,6 +160,8 @@ class CreditCard
   end
 
   def check_card
+    self.double_every_other
+    self.sum_of_digits
     if (@sum % 10) == 0
       return true
     else
