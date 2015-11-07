@@ -62,12 +62,54 @@ Similar to the previous release, I believe it is simpler if you are familiar wit
 
 Release 6: Reflect
 
+I found this example in a stack overflow forum that is very useful to understand reader and writer acccessors.
+
+
+------ Without Reader/Writer ------
+
+class Person
+  def name
+    @name
+  end
+
+  def name=(str)
+    @name = str
+  end
+end
+
+------- With Reader/Writer ---------
+
+class Person
+  attr_reader :name
+  attr_writer :name
+end
+
+------- With Accessor -------------
+
+class Person
+  attr_accessor :name
+end
+
+------------------------------
+
 What is a reader method?
+
+A reader method is a method that defines an instance variable within a given class. In the example above, we are defining @name through the name method. This can also be expressed through "attr_reader = :name".
+
 What is a writer method?
+
+Writer methods are methods that give an instance variable a value. In the example above, the writer method told us that an argument will give the @name variable a value.
+
 What do the attr methods do for you?
+
+Attr methods combine reader and writer methods into a single line. These should not be used every time, and only when both reader and writer are defined / used within a class.
+
 Should you always use an accessor to cover your bases? Why or why not?
+
+Nope! Making all instance variables changeable when we only want to read them can lead to issues withi debugging.
+
 What is confusing to you about these methods?
 
-
+Reading these methods can be a bit tricky. Through the first three releases, the final question was "does this make your code more or less readable?" I found that it becomes less readable for someone unfamiliar with the code's execution. Once understanding the execution, it made sense and I understood why someone would use these methods. I do believe that this will become more familiar over time and a good practice to maintain.
 
 =end
