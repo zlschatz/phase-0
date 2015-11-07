@@ -5,11 +5,19 @@
 # I spent [#] hours on this challenge.
 
 class NameData
-
+  def important_method
+    @name = 'Zach'
+  end
 end
 
-
 class Greetings
+  def initialize
+    @NameData = NameData.new
+  end
+
+  def hello
+    puts "Hello, " + @NameData.important_method
+  end
 
 end
 
