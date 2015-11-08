@@ -131,41 +131,36 @@ class CreditCard
 
   def double_every_other
     @card_number.each_with_index do |value, index|
-      if index % 2 != 0
-        @card_number.collect! {|value| value.to_i * 2}
-      else
-        @final_array << value.to_i
-      end
+        @card_number[index] = value * 2 if index.odd?
     end
   end
 
 
   def sum_of_digits
-    @card_number.each do |value|
-      if value.to_s.length == 2
-        @card_number.collect! {|value| value.to_s.split('')}
-      else
-        @final_array << value
-      end
-    end
-    @card_number.flatten.each do |value|
-      @final_array << value.to_i
-    end
-
-    @sum = 0
-    @final_array.each do |value|
-      @sum+=value
-    end
-
+    @sum = @card_number.join.chars.map(&:to_i).reduce(:+)
   end
 
   def check_card
-    self.double_every_other
-    self.sum_of_digits
-    if (@sum % 10) == 0
-      return true
-    else
-      return false
-    end
+    double_every_other
+    sum_of_digits
+    @sum % 10 == 0 ? true : false
   end
+
 end
+
+#Reflection
+
+=begin
+What was the most difficult part of this challenge for you and your pair?
+
+We ran into a (fairly large) speed bump towards the end of the challenge. We had gone through all the methods, and thoroughly defined each part of the challenge. At the very end, we noticed that we were testing on a broken return that always showed true. We then had to go back through and debug for what changes were correct, and which had to be redone. This added additional time, but we worked well together to see it through.
+
+What new methods did you find to help you when you refactored?
+
+Flatten was a great method that we came across. This allowed us to take the assortment of arrays and turn it into a singular array. We knew that this would be changed while refactoring, but it was a good way to keep us moving forward in our initial solution. &_to.i also helped turn the values back to integers while refactoring.
+
+What concepts or learnings were you able to solidify in this challenge?
+
+There is no way to .to_i or .to_s can be tricky while working with arrays. We want to convert the entire thing, but need to iterate through to see the individual values. That was vital in this challenge, and we learned this more than once.
+
+=end
