@@ -16,6 +16,19 @@ var terah = {
 // __________________________________________
 // Write your code below.
 
+function childName(name) {
+  if (name == "Carson") {
+    return name;
+  } else if (name == "Carter") {
+    return name;
+  } else if (name == "Colton"){
+    return name;
+  }
+  else
+    return "Sorry, we don't have a child named " + name + ".";
+  }
+}
+
 var adam = {
   name: "Adam",
   spouse: "Terah",
@@ -26,7 +39,14 @@ var adam = {
 terah["spouse"] = adam["name"];
 terah["weight"] = 125;
 delete terah["eyeColor"]
-terah["children"] = []
+terah["children"] = {
+  getName: childName("Carson"),
+  getName: childName("Carter"),
+  getName: childName("Colton"),
+}
+
 //Step 7
+
+
 
 console.log(terah)
