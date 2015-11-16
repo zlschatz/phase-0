@@ -109,7 +109,7 @@ play('left')
 
 
 // Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
-// At this point, my game is very simple. I spent a majority of my time coordinating the objects to interact with one another, avoid complexity within the play senarious.
+// At this point, my game is very simple. I spent a majority of my time coordinating the objects to interact with one another, avoid complexity within the play senarious. That being said, I did learn about new built-in methods while researching for my game. One in particular that I hope to implement in the future would be the incorporation of Math methods. I hope to improve my game in the future with descriptive calculations for power behind a hit and how that can affect the oppenent's block in various ways. I feel as though the eval() method could be useful for allowing a player to know their hit level / rest level -- but when I tried to implement the code would break.
 
 
 // How can you access and manipulate properties of objects?
