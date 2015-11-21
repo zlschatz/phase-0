@@ -77,47 +77,66 @@ var officers = {
 // __________________________________________
 // Initial Solution
 
-for (var key in votes) {
-   if (votes.hasOwnProperty(key)) {
-       var student = votes[key];
-        for (var position in student) {
-       var candidate = student[position]
-         if (voteCount[position].hasOwnProperty(candidate)) {
-            voteCount[position][candidate] += 1;
-         }
-         else {
-            voteCount[position][candidate] = 1;
-         }
-       }
+for (var student in votes) {
+  var studentsVotes = votes[student];
+  for (var position in studentsVotes) {
+    var candidate = studentsVotes[position]
+    if (voteCount[position].hasOwnProperty(candidate)) {
+      voteCount[position][candidate] += 1;
     }
+    else {
+      voteCount[position][candidate] = 1;
+    }
+  }
 }
 
-for (var key in voteCount) {
-   if (votes.hasOwnProperty(key)) {
-       var position = voteCount[key];
-       candidates = Object.keys(position).sort(function(a,b){return position[a]-position[b]})
-
-    }
+for (var position in voteCount) {
+  var candidateVotes = [];
+  var candidates = voteCount[position];
+  for (var candidate in candidates) {
+    var votes = voteCount[position][candidate];
+    candidateVotes.push([candidate, votes]);
+  }
+  officers[position] = candidateVotes.sort(function(a, b) { return a[1]-b[1]; } ).reverse()[0][0];
 }
-
-
-
 
 
 // __________________________________________
 // Refactored Solution
 
+for (var student in votes) {
+  for (var position in votes[student]) {
+    if (voteCount[position].hasOwnProperty(votes[student][position])) {
+      voteCount[position][votes[student][position]] += 1;
+    }
+    else {
+      voteCount[position][votes[student][position]] = 1;
+    }
+  }
+}
 
-
-
+for (var position in voteCount) {
+  var candidateVotes = [];
+  var candidates = voteCount[position];
+  for (var candidate in candidates) {
+    var votes = voteCount[position][candidate];
+    candidateVotes.push([candidate, votes]);
+  }
+  officers[position] = candidateVotes.sort(function(a, b) { return a[1]-b[1]; } ).reverse()[0][0];
+}
 
 
 // __________________________________________
 // Reflection
 
+// What did you learn about iterating over nested objects in JavaScript?
+// It can become confusing when using bracket or dot notation to keep track of what nest you are working in while iterating. To minimize this, we decided to set local variables with indicative labels to help guide us through the different levels of the nested objects. We also learned that it is best to use for...in while iterating over nested objects in JS. Once we figured out the proper syntax, we were able to successfully target the appropriate objects.
 
+// Were you able to find useful methods to help you with this?
+// Yup! .hasOwnProperty was a very useful method. This allowed us to determine whether a candidate had already received a vote fora particular position. Initially, we struggled to increase the votes, as the number of votes would be changed to 1 each time a new vote was cast. .hasOwnProperty helped solve this issue and increased the counter for total votes.
 
-
+// What concepts were solidified in the process of working through this challenge?
+// Navigating through nested objects is definitely clearer after this challenge. Taking it step by step, and digging through each level of the nested object was a good exercise in the challenge. This involved a bit of research as well. Writing bracket notation was also emphasized during this challenge, as to when quotations are to be included and excluded.
 
 
 // __________________________________________
