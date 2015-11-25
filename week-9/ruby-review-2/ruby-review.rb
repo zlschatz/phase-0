@@ -1,8 +1,8 @@
 # OO Basics: Student
 
 
-# I worked on this challenge with X.
-# This challenge took me [#] hours.
+# I worked on this challenge with Natalie Polen.
+# This challenge took me [1.5] hours.
 
 
 # Pseudocode
@@ -149,10 +149,10 @@ p linear_search(students, "NOT A STUDENT") == -1
 
 
 # What concepts did you review in this challenge?
-
+# This was a great overall review of the Ruby language. We worked with arrays, objects and iterations. In particular, this was good for reviewing instance variables, and determining what can and cannot be called both inside and outside the class. It was also a good review of Ruby syntax while working with the .each and .each_with_index methods. Natalie was also able to teach me about the .reduce method, which is fantastic for refactoring!
 
 # What is still confusing to you about Ruby?
-
+# In this particular challenge, we learned a new concept dealing with linear and binary searches. After a bit of syntax issues, we were able to sort out the linear search and pass the tests. When we moved to the binary search, we were lost without much direction. The driver code originally helped guide us towards the number of arguments to include in the method -- but this release did not have any driver code to test against. After continuing research, we found quite lengthy case scenarios that use binary searches to target the index of a given element. I'll continue looking for additional explanations to fully understand this concept.
 
 # What are you going to study to get more prepared for Phase 1?
-
+# I definitely need to become more confident in the iteration syntax. I was slightly disappointed in myself, and do not want to feel that way when we start phase 1. I hope to review additional Ruby problems beyond the requirements to satisfy this week's challenges. All these concepts will eventually need to be used, so mind as well get a head start! This will only reinfornce the foundations of our Ruby knowledge while learning additional strategies.
